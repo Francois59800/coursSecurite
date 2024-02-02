@@ -1,0 +1,89 @@
+
+<!-- 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        injection SQL
+    </h1>
+
+
+
+
+
+</body>
+</html>
+-->
+ 
+<?php
+<!-- $_POST[''] -->
+echo('Hello world');
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .login-container {
+            max-width: 300px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5b401b;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Injection SQL</h1>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="process-login.php" method="post">
+            <label for="username">Nom utilisateur :</label>
+            <input type="text" id="username" name="username" placeholder="Entrer votre nom" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Entrer votre mot de passe" required>
+
+            <button type="submit">soumettre</button>
+        </form>
+    </div>
+</body>
+
+</html>
